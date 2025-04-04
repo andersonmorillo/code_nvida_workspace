@@ -6,6 +6,6 @@
 },  "runArgs": [
     "--gpus=all", "--privileged"
   ], "hostRequirements": {
-		"gpu": "optional"
+		"gpu": true
 	}
 }
