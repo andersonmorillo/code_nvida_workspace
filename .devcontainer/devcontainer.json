@@ -7,5 +7,6 @@
     "--gpus=all", "--privileged"
   ], "hostRequirements": {
 		"gpu": true
-	}
+	}, 
+	"postCreateCommand": "nvidia-smi"
 }
