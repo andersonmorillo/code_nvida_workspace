@@ -1,16 +1,11 @@
 {
-"name": "CUDA",
-  "image": "nvidia/cuda:12.7.0-devel-ubuntu22.04", 
-	"features": {
-		// See all possible options here https://github.com/devcontainers/features/tree/main/src/docker-in-docker
-		// "ghcr.io/devcontainers/features/docker-in-docker:2": {
-			// "moby": "false"
-		// },
-        "ghcr.io/devcontainers/features/nvidia-cuda:latest": {
-        }
-	},
-    "runArgs": [
-        "--gpus", 
-        "all"
-    ]
+"name": "cudar",
+"image": "mcr.microsoft.com/devcontainers/base:ubuntu",  // Any generic, debian-based image.
+"features": {
+  "ghcr.io/devcontainers/features/nvidia-cuda:1.2.0": {"hostRequirements": {
+    "gpu": "optional" 
+  }}
+},  "runArgs": [
+    "--gpus=all"
+  ]
 }
