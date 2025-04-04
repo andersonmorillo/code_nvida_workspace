@@ -1,12 +1,11 @@
 {
-	"name": "Development environments on your infrastructure",
-	"image": "codercom/enterprise-base:ubuntu", 
-
+	// "name": "Development environments on your infrastructure",
+	// "image": "codercom/enterprise-base:ubuntu", 
 	"features": {
 		// See all possible options here https://github.com/devcontainers/features/tree/main/src/docker-in-docker
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {
-			"moby": "false"
-		},
+		// "ghcr.io/devcontainers/features/docker-in-docker:2": {
+			// "moby": "false"
+		// },
         "ghcr.io/devcontainers/features/nvidia-cuda:latest": {
         }
 	},
