@@ -2,10 +2,10 @@
 "name": "cudar",
 "image": "mcr.microsoft.com/devcontainers/base:ubuntu",  // Any generic, debian-based image.
 "features": {
-  "ghcr.io/devcontainers/features/nvidia-cuda:1.2.0": {"hostRequirements": {
-    "gpu": "optional" 
-  }}
+  "ghcr.io/devcontainers/features/nvidia-cuda:1.2.0": {}
 },  "runArgs": [
     "--gpus=all"
-  ]
+  ], "hostRequirements": {
+		"gpu": "optional"
+	},
 }
